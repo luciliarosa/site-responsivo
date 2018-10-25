@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.texto-destaque{
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    padding-right: 2px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+img{
+    height: 200px;
+    width: 350px;
+}
+main > div {
+    padding-left:5px;
+}
+
+@media (max-width: 700px){
+    main{
+        flex-wrap: wrap;
+    }
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px){
+    .texto-destaque{
+        font-size: 22px;
+        background-color: skyblue;
+    }
+    
+}
